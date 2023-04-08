@@ -2,7 +2,7 @@ const { EmbedBuilder } = require('discord.js');
 
 exports.run = (client, message, args) => {
   let member = message.mentions.members.first() || message.guild.members.cache.get(args[0]);
-  if (message.channel.id !== '1024717505832423454') return message.reply('**Belirlenen kanal dışında bir yerde bu komutu kullanamazsın!**');
+  if (message.channel.id !== 'belirli_kanal_id') return message.reply('**Belirlenen kanal dışında bir yerde bu komutu kullanamazsın!**');
 
   if (!member) return message.reply('**Ship Oranını Ölçmek İstediğin Kişiyi Etiketlemen Gerekir! :heart:**');
   if (member.user.bot) return message.reply('**Botlarla Yapamazsın, Sakin Ol :D**');
