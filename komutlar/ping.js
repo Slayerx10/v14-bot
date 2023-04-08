@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 
 exports.run = async (client, message, args) => {
-if (!message.member.permissions.has("MANAGE_MESSAGES")) return message.reply("Bu komutu kullanmak için mesajları yönet iznine sahip olmalısın.");
+if (!message.member.permissions.has("MANAGE_MESSAGES")) return message.reply("Bu komutu kullanmak için iznin yok!");
 
   const ping = new Discord.EmbedBuilder()
 .setDescription(`Gecikme sürem → ${client.ws.ping} ms`)
