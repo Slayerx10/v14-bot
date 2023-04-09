@@ -16,6 +16,8 @@ const client = new Client({
 // Yaz'da silinen mesajlar
 
 client.on('messageDelete', message => {
+  if (!message.content.startsWith('+yaz')) return; // Sadece +yaz ile başlayan mesajları işle
+  
   const fs = require('fs');
   const deletedMessage = {
     content: message.content,
@@ -32,6 +34,7 @@ client.on('messageDelete', message => {
     else console.log(`Deleted message stored: "${message.content}"`);
   });
 });
+
 
 
 // Yaz'da silinen mesajlar
