@@ -14,7 +14,7 @@ let props = require(`../komutlar/${f}`);
     
 client.on('ready', () => {
   
- client.user.setActivity(`Oynuyor_Kısmınds_Yazacak`)
+ client.user.setActivity(`Oynuyor_Kısmında_Yazacak`)
 
   
   
