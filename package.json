@@ -21,7 +21,8 @@
     "http": "^0.0.0",
     "moment": "^2.29.4",
     "moment-duration-format": "^2.3.2",
-    "jimp": "^0.22.7"
+    "jimp": "^0.22.7",
+    "string-similarity": "^4.0.4"
   },
   "engines": {
     "node": ">=16.6.0"
