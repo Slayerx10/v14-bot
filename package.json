@@ -23,7 +23,10 @@
     "moment-duration-format": "^2.3.2",
     "jimp": "^0.22.7",
     "string-similarity": "^4.0.4",
-    "discord-gamecord": "^4.0.4"
+    "discord-gamecord": "^4.0.4",
+    "discord-buttons": "^4.0.4",
+    "hastebin-gen": "^2.0.5",
+    "common-tags": "^1.8.2"
   },
   "engines": {
     "node": ">=16.6.0"
