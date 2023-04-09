@@ -6,3 +6,5 @@ KURULUM
 
 
 evet v14 ama slash yerine prefixle çalışıyor
+
+hala yapılıyor
