@@ -2,8 +2,6 @@ const Discord = require('discord.js');
 const { EmbedBuilder } = require('discord.js');
 
 exports.run = (client, message, args) => {
-  if (!message.guild) return message.channel.send(`Bu komut sadece sunucularda kullanılabilir!`);
-  if (!message.member.permissions.has("MANAGE_MESSAGES")) return message.reply("Bu komutu kullanmak için iznin yok!");
   
   if (!message.guild) {
     const ozelmesajuyari = new EmbedBuilder()
