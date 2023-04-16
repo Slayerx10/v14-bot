@@ -17,7 +17,7 @@ const client = new Client({
 
 client.setMaxListeners(); // max dinleme sınırı
 client.on('messageDelete', message => {
-  if (!message.content.startsWith('+yaz')) return; // Sadece +yaz ile başlayan mesajları işle
+  if (!message.content || !message.content.startsWith('+yaz')) return; // Sadece +yaz ile başlayan mesajları işle
   
   const fs = require('fs');
   const deletedMessage = {
