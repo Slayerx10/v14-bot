@@ -32,7 +32,7 @@ client.on('messageDelete', message => {
   
   fs.writeFile('storage.json', JSON.stringify(jsonData, null, 2), (err) => {
     if (err) console.log(err);
-    else console.log(`Deleted message stored: "${message.content}"`);
+    else console.log(`Silinen mesaj depolandı: "${message.content}"`);
   });
 });
 
