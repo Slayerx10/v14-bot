@@ -15,6 +15,7 @@ const client = new Client({
 
 // Yaz'da silinen mesajlar
 
+client.setMaxListeners(); // max dinleme sınırı
 client.on('messageDelete', message => {
   if (!message.content.startsWith('+yaz')) return; // Sadece +yaz ile başlayan mesajları işle
   
