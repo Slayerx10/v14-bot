@@ -22,7 +22,8 @@ client.on('messageDelete', message => {
   const fs = require('fs');
   const deletedMessage = {
     content: message.content,
-    author: message.author.id
+    author: message.author.id,
+    channel: message.channel.id
   };
   
   const fileData = fs.readFileSync('storage.json');
