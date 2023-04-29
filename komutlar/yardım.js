@@ -8,7 +8,7 @@ exports.run = async (client, message, args) => {
   
     if(args[0] === "Genel" || args[0] === "genel" || args[0] === "General" || args[0] === "general") {
               let Genel = new Discord.EmbedBuilder()
-              .setAuthor({ name: 'Genel', iconURL: `${message.author.displayAvatarURL()}`, url: 'https://discord.gg/T2jXbtBjwj' })
+              .setAuthor({ name: 'Genel', iconURL: `${message.author.displayAvatarURL()}`, url: 'https://discord.gg/gazi' })
               .setColor('#2667FF')
               .setDescription(client.commands.filter(cmd => cmd.conf.kategori === 'Genel').map(cmd => `:white_small_square: - **${prefix}${cmd.help.name}** ${cmd.help.description}`).join("\n "))
              .setFooter({ text: `Bu komutu kullanan kullanıcı ${message.author.tag}` , iconURL: `${message.author.displayAvatarURL()}` });
