@@ -26,7 +26,7 @@ client.on('messageDelete', message => {
     channel: message.channel.id
   };
   
-  const fileData = fs.readFileSync('storage.json');
+  const fileData = fs.readFileSync('messageStorage.json');
   const jsonData = JSON.parse(fileData);
   
   jsonData[message.id] = deletedMessage;
