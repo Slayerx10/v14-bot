@@ -31,7 +31,7 @@ client.on('messageDelete', message => {
   
   jsonData[message.id] = deletedMessage;
   
-  fs.writeFile('storage.json', JSON.stringify(jsonData, null, 2), (err) => {
+  fs.writeFile('./storage/messageStorage.json', JSON.stringify(jsonData, null, 2), (err) => {
     if (err) console.log(err);
     else console.log(`Silinen mesaj depolandı: "${message.content}"`);
   });
