@@ -45,6 +45,7 @@ module.exports = client;
 
 require("./events/message.js")
 require("./events/ready.js")
+require("./events/guildMemberUpdate.js")
 
 const express = require("express");
 const app = express();
